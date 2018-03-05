@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5绚丽动画音乐播放效果</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/three.js"></script>
+<script type="text/javascript" src="js/backCanvas.js" ></script>
+
+<style>
+    #micList {
+        width:300px; margin-left:auto; border-radius:10px 10px 10px 10px; margin-top:20px;
+        border:1px solid white; margin-right:auto; box-shadow:2px 2px 2px yellow;
+    }
+    ul {
+        list-style-type:none; border:0px solid white;
+        width:200px;
+    }
+    ul li {
+        width:200px; height:30px; line-height:30px; border:0px solid yellow; text-align:left;
+        margin-top:5px; text-shadow:3px 3px 2px white; font-size:25px;
+    }
+    ul li img {
+        
+    }
+    .change {
+        color:#808080;  text-shadow:3px 3px 2px #808080;
+    }
+</style>
+</head>
+<body>
+	<div class="snow" style="height:1200px; background:#000;  position:fixed; left:0px; top:0px; right:0px; bottom:0px; pointer-events: none;z-index: -1;">
+		<canvas width="1904" height="913" style="position: absolute;left: 0;top: 0;">
+			
+		</canvas>
+	</div>
+<h3>《SuperHang》音乐播放器</h3>
+
+<canvas id='canvas' width="850" height="110"></canvas>
+<br>
+<br>
+<audio src="img/校长 - 带你去旅行.mp3" controls="controls" autoplay="autoplay"></audio>
+<div style="margin-top: 10%;">
+<img src="img/mic.jpg" />
+</div>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
